@@ -95,7 +95,6 @@ const filteredProducts = computed(() => {
 </script>
 
 <template>
-  <!-- DEMANDER QUEL FORM ACTION DONNER-->
   <form @submit.prevent>
     <div class="container">
       <div
@@ -121,6 +120,7 @@ const filteredProducts = computed(() => {
           <AddProduct @add="addProduct" />
         </div>
 
+        <!-- https://vuejs.org/guide/components/v-model.html-->
         <SearchBar v-model="searchQuery" />
 
         <!-- Liste Produits -->

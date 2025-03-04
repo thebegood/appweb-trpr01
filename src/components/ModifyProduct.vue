@@ -5,8 +5,6 @@ import type { Product } from "../types"
 const props = defineProps<{ product: Product }>()
 const emit = defineEmits(["save", "cancel"])
 
-//const modifiedProduct = ref<Product>({ ...props.product })
-
 const modifiedProductName = ref<string>("")
 const modifiedProductDescription = ref<string>("")
 const modifiedProductColor = ref<string>("")

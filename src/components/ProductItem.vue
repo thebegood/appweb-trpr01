@@ -45,15 +45,12 @@ const emit = defineEmits(["remove", "modify", "duplicate"])
   >
     <StockAlert :stock="props.product.stock" :product="product" />
 
-    <!--LI EST UN BOUTON CLICABLE POUR LES DÉTAILS-->
     <div id="product">
       <h3>
         <StockDisplay :stock="props.product.stock" />
         {{ props.product.title }} - {{ props.product.price }}$
       </h3>
       <Details :product="props.product" :showDetails="showDetails" />
-
-      <!--{{ (props.product.title, props.product.description, props.product.color) }}-->
 
       <button @click="onEdit(props.product.id)" class="btn btn-primary">
         Modifier
